@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
 //  response.send('Hello World 2!');
 var buffer = new Buffer(100);
 var fs = require('fs');
-buffer = fs.readFile('./index.html', function (err, data) {
+buffer = fs.readFile('/app/index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
 });
